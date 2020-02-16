@@ -11,10 +11,12 @@ I implemented following functions.
 ## usage 
 This usage is written for user who uses MacOS.
 Please follow the following steps, 
-- download data typing "git clone https://github.com/toshiakiasakura/core_curriculum " in terminal. 
+- download data typing "git clone https://github.com/toshiakiasakura/core_curriculum " in terminal, 
 - fill your desired order, and put that data where appropriate, 
-    ("./dt/***" is recommended). 
-- change the path of "original" in "pathList.py". 
+    ("./dt/***" is recommended), 
+- change the path of "original" in "pathList.py", 
+- open jupyter notebook and select "reconstruction.ipynb", and 
+- run all. 
 
 ## Attention 
 - Do not add or delete any rows and columns. 
@@ -27,7 +29,7 @@ want to implement them as everyone (ofcourse,who can not use python),<br>
 can use these tools. If you want to collaborate with me, <br> 
 please contact me. 
 
-Note: I do not help set up of the environmnet of python during <br>
+Note: I would not help set up of the environmnet of python during <br>
 the course of this time. 
 
 
