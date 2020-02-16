@@ -1,6 +1,6 @@
 # core_curriculum
 This is a help tool for core curriculum assignment.
-See first sample result by clicking "reconstruction.ipynb". 
+See first a sample result by clicking "reconstruction.ipynb". 
 
 I implemented following functions. 
 - check duplication,
