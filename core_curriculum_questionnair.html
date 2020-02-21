@@ -16427,7 +16427,6 @@ div#notebook {
 <span class="o">%</span><span class="k">autoreload</span> 2
 
 <span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;../public/&quot;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">warnings</span>
@@ -16710,6 +16709,13 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#25304;&#26463;&#26178;&#38291;&#12522;&#12473;&#12488;">&#25304;&#26463;&#26178;&#38291;&#12522;&#12473;&#12488;<a class="anchor-link" href="#&#25304;&#26463;&#26178;&#38291;&#12522;&#12473;&#12488;">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -18123,6 +18129,13 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#30149;&#38498;&#12372;&#12392;&#12398;&#24537;&#12375;&#12373;&#12522;&#12473;&#12488;">&#30149;&#38498;&#12372;&#12392;&#12398;&#24537;&#12375;&#12373;&#12522;&#12473;&#12488;<a class="anchor-link" href="#&#30149;&#38498;&#12372;&#12392;&#12398;&#24537;&#12375;&#12373;&#12522;&#12473;&#12488;">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -20718,9 +20731,98 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#22238;&#31572;&#35386;&#30274;&#31185;&#12522;&#12473;&#12488;">&#22238;&#31572;&#35386;&#30274;&#31185;&#12522;&#12473;&#12488;<a class="anchor-link" href="#&#22238;&#31572;&#35386;&#30274;&#31185;&#12522;&#12473;&#12488;">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+    <span class="n">cond</span> <span class="o">=</span> <span class="n">r</span> <span class="o">==</span> <span class="n">df</span><span class="p">[</span><span class="n">dfKey</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="n">qu</span><span class="o">.</span><span class="n">priRegion</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond</span><span class="p">][</span><span class="n">dfKey</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span><span class="o">.</span><span class="n">unique</span><span class="p">()))</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+    ##################################
+    ########  診療科 : 内科(大学内)   ########
+    ##################################
+
+北大神経内科, 北大  神経内科, 第二内科、腎グループ, 循環器内科Aグループ, 血液内科2グループ, 循環器内科　Bグループ, 北大 神経内科, 第一内科, 血液内科（1グループ）, 第一内科　非癌グループ, 消化器内科　化学療法グループ, 北海道大学　消化器内科　胆膵グループ, 北大 消化器内科 内視鏡グループ, 北大　第二内科, 北大血液内科, 北大消化器内科胆膵グループ, 北大 第II内科 糖尿病•内分泌グループ, 北大内科１ 癌Gr, 第二内科　腎臓グループ, 北大　1内　非癌グループ, 北大第一内科（循環代謝）, 北大, 第一内科  肺癌G, 北大　血液内科2グループ, 北大　神経内科, 神経内科, 北大消化器内科肝臓G, 血液内科1, 北大　第一内科　非癌グループ
+
+
+    ##################################
+    ########  診療科 : 内科(大学外)   ########
+    ##################################
+
+NTT東日本札幌病院 呼吸器内科, 札幌徳州会病院 総合内科, 天使病院    糖尿病・内分泌科, 札幌東徳洲会　総合診療, 市立札幌病院 循環器内科, 小樽市立病院 呼吸器科, 北海道医療センター 消化器内科, 札幌北楡病院  血液内科, 市立札幌病院　リウマチ科, KKR札幌医療センター　呼吸器内科, 国立病院機構函館病院 消化器内科, 北海道中央労災病院 呼吸器内科, 函館中央病院  循環器内科, 旭川赤十字病院　神経内科, 札幌徳洲会病院　総合診療科, JCHO北海道病院 呼吸器内科, 恵佑会第二　消化器内科, 市立稚内病院, 北楡病院消化器高野グループ, 消化器内科, 市立札幌病院　呼吸器内科, 天使病院　呼吸器内科, 札幌東徳洲会病院 総合診療科, 天使病院　糖尿病内科, 札幌徳州会病院 腎臓内科, 勤医協中央病院　総合内科, 総合診療科, 国立函館病院 呼吸器内科, 北海道医療センター　循環器内科, 天使病院 呼吸器内科, 北楡病院　血液内科　紫グループ, 札幌徳洲会, NTT東日本札幌病院　呼吸器内科, 市立札幌病院リウマチ免疫内科, KKR札幌医療センター, 札幌徳洲会病院　プライマリケア科
+
+
+    ##################################
+    ########  診療科 : 精神科   ########
+    ##################################
+
+砂川市立, 石金病院, 札幌花園病院, 苫小牧緑ヶ丘病院, 北海道大学病院, 北大, 函館渡辺病院, 北大精神科, 国立病院機構帯広病院, 市立札幌病院　精神科, 北大病院　精神科　Bグループ(気分障害), 北海道大学, 砂川市立病院, 手稲病院, 市立札幌病院, 大谷地病院, 市立室蘭総合病院　精神科, 平松記念病院, 市立札幌病院 精神科
+
+
+    ##################################
+    ########  診療科 : 小児科   ########
+    ##################################
+
+帯広厚生, JCHO北海道病院, 札幌厚生病院, KKR札幌医療センター, 北大病院  神経, 市立千歳市民病院, 函館中央病院　小児科, 日鋼, 天使病院 , 北大　前半内分泌　後半血液, 砂川市立病院 小児科, 北大小児科　新生児G, 北大小児科　内分泌G, 市立札幌病院, 北大 小児科 循環器グループ, 手稲渓仁会病院, 帯広協会病院, 北大　神経, 北大　血液, 札幌北楡病院, 北大　小児科　免疫グループ　内分泌グループ, 北大　新生児・神経, 北大小児科 循環器グループ, 名寄市立病院, 苫小牧市立病院, 北大　小児　腎　, 製鉄記念室蘭病院, 札幌徳洲会小児科, 日鋼記念病院, 小児科　免疫・神経, 釧路赤十字病院 小児科, 北海道立子ども医療・療育センター　循環器内科, 札幌徳洲会病院　小児科, 北海道大学　小児科　腎臓グループ, 天使病院 小児科（小児／NICU）, 砂川市立病院, 旭川厚生病院　小児科, 手稲渓仁会病院　小児科, 名寄市立総合病院
+
+
+    ##################################
+    ########  診療科 : 産婦人科   ########
+    ##################################
+
+北見赤十字病院  産婦人科, 札幌マタニティウィメンズクリニック, 北大　婦人科　腫瘍Aグループ, 函館中央病院 産婦人科, KKR札幌医療センター, 札幌厚生産婦人科, 苫小牧市立病院, 北大病院婦人科, 帯広厚生病院　産婦人科, JCHO北海道病院　産婦人科, 北大婦人科生殖グループ, 函館五稜郭病院, 王子総合病院, 稚内市立病院, JCOH北海道病院, 北大病院　婦人科　B, 砂川市立病院, 手稲渓仁会病院, 釧路赤十字産婦人科, 北大 婦人科 生殖グループ, 帯広厚生, 市立千歳市民病院, 王子総合　産婦人科, 北大　産婦人科　生殖グループ, 釧路赤十字病院, 砂川市立病院産婦人科, 函館中央病院, 市立札幌病院, JCHO 北海道病院　産婦人科, 市立札幌 産婦人科, 帯広厚生病院
+
+
+    ##################################
+    ########  診療科 : 外科   ########
+    ##################################
+
+王子総合病院　外科, 北大　消化器外科Ⅱ, 釧路赤十字病院　外科, 北大 第二外科, 札幌北楡病院, 北大　第一外科　小児グループ, 北大　循環器外科, JCHO北辰病院 外科, 旭川赤十字病院, 市立千歳市民病院 外科, 北大 第一外科 肝胆膵グループ, 市立釧路総合病院, 斗南病院, 手稲渓仁会病院外科, 札幌北楡病院 外科, 北大第一外科　小児外科グループ, 国立病院機構函館病院, 北大 呼吸器外科, 天使病院, 北大 第一外科, 市立稚内病院　外科, 北大　第一外科　移植グループ, 北大病院　第一外科　肝臓グループ, 北海道大学 呼吸器外科, 小樽協会病院, KKR札幌病院 外科, 私立稚内病院外科, 北大　呼吸器外科, 消化器外科Ⅱ　Bグループ, 函館中央病院, 国立函館, 恵佑会札幌　大腸グループ, 北見赤十字病院, 北大　第一外科　肝胆膵グループ
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#30149;&#38498;&#12372;&#12392;&#12398;&#22238;&#31572;&#12414;&#12392;&#12417;-&#65292;&#20197;&#19979;&#20840;&#37096;&#12371;&#12428;&#12391;&#32066;&#12431;&#12426;&#65294;">&#30149;&#38498;&#12372;&#12392;&#12398;&#22238;&#31572;&#12414;&#12392;&#12417; &#65292;&#20197;&#19979;&#20840;&#37096;&#12371;&#12428;&#12391;&#32066;&#12431;&#12426;&#65294;<a class="anchor-link" href="#&#30149;&#38498;&#12372;&#12392;&#12398;&#22238;&#31572;&#12414;&#12392;&#12417;-&#65292;&#20197;&#19979;&#20840;&#37096;&#12371;&#12428;&#12391;&#32066;&#12431;&#12426;&#65294;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">qu</span><span class="o">.</span><span class="n">sumRegional</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">regions</span><span class="p">,</span><span class="n">dfKey</span><span class="p">)</span>
