@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 
+
 termN = ["term%d"%i for i in range(1,7)]
 item = "施設名"
 rank = "順位"
@@ -59,7 +60,7 @@ def checkDuplicate(df_):
             display(df_.loc[cond])
     else:
         msg = "重複はありません."
-        pinrt(msg)
+        print(msg)
 
 def checkCandidate(df_,dfCand):
     '''
